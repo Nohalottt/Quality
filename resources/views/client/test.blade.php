@@ -1,11 +1,12 @@
 @extends('layouts.client')
 
 @section('content')
+
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Test</div>
+                <div class="card-header" style="color: red ;font-weight:bold" ><i class="fa-sharp fa-light fa-input-text" style="color: #209cee;"></i>Quiz</div>
 
                 <div class="card-body">
                     @if(session('status'))

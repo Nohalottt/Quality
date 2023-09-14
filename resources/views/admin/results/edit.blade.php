@@ -18,8 +18,8 @@
         <div class="card shadow">
             <div class="card-header">
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">{{ __('edit result')}}</h1>
-                    <a href="{{ route('admin.results.index') }}" class="btn btn-primary btn-sm shadow-sm">{{ __('Go Back') }}</a>
+                    <h1 class="h3 mb-0 text-gray-800"><i class="fa-solid fa-pen-to-square" style="color:red;"></i> <span style="color: #209CEE">{{ __('Modifier résultat')}}</span></h1>
+                    <a href="{{ route('admin.results.index') }}" class="btn btn-primary btn-sm shadow-sm">{{ __('Retourner') }}</a>
                 </div>
             </div>
             <div class="card-body">
@@ -27,7 +27,7 @@
                     @csrf
                     @method('put')
                     <div class="form-group">
-                        <label for="question">{{ __('question') }}</label>
+                        <label for="question">{{ __('Question') }}</label>
                         <select class="form-control" name="questions[]" multiple id="question">
                             @foreach($questions as $id => $question)
                                 <option {{ (in_array($id, old('questions', [])) || isset($result) && $result->questions->contains($id)) ? 'selected' : '' }} value="{{ $id }}">{{ $question }}</option>
@@ -35,10 +35,10 @@
                         </select>
                     </div>
                     <div class="form-group">
-                        <label for="total_points">{{ __('total_points') }}</label>
+                        <label for="total_points">{{ __('Toatale') }}</label>
                         <input type="number" class="form-control" id="total_points" placeholder="{{ __('total_points') }}" name="total_points" value="{{ old('total_points', $result->total_points) }}" />
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">{{ __('Save')}}</button>
+                    <button type="submit" class="btn btn-primary btn-block">{{ __('Enregistrer')}}</button>
                 </form>
             </div>
         </div>

@@ -10,11 +10,11 @@
         <div class="card">
             <div class="card-header py-3 d-flex">
                 <h6 class="m-0 font-weight-bold text-primary">
-                Total points: {{ $result->total_points }} points
+                    Points totaux: {{ $result->total_points }} points
                 </h6>
                 <div class="ml-auto">
                     <a href="{{ route('admin.results.index') }}" class="btn btn-primary">
-                        <span class="text">{{ __('Go Back') }}</span>
+                        <span class="text">{{ __('Retourner') }}</span>
                     </a>
                 </div>
             </div>
@@ -23,7 +23,7 @@
                     <table class="table table-bordered table-striped table-hover" cellspacing="0" width="100%">
                     <thead>
                             <tr>
-                                <th>Question Text</th>
+                                <th>Question</th>
                                 <th>Points</th>
                             </tr>
                         </thead>

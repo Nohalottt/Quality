@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" >
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
@@ -27,15 +28,15 @@
             <div class="container">
                 <h3 class="mx-auto text-center">  
                     <a class="nav-link text-center" href="{{ route('client.test') }}">
-                        {{ __('Start Test') }}
+                        <i class="fa-solid fa-hourglass-start" style="color: #209cee;"></i> {{ __('Start Test') }}
                     </a></h3>
                 <h5 class="mx-auto text-center d-flex">  
                     @auth
                         <a class="nav-link text-center" href="{{ route('admin.dashboard.index') }}">
-                            {{ auth()->user()->name }}
+                            {{ auth()->user()->name }} 
                         </a>
                         <a class="nav-link text-center" onclick="event.preventDefault();document.getElementById('logout-form').submit();" href="{{ route('logout') }}">
-                            Logout
+                            Se déconnecter
                         </a>
                     @endauth
                     <form class="d-none" action="{{ route('logout') }}" id="logout-form" method="post">

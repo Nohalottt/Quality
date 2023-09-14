@@ -19,8 +19,8 @@
         <div class="card shadow">
             <div class="card-header">
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">{{ __('edit roles')}}</h1>
-                    <a href="{{ route('admin.permissions.index') }}" class="btn btn-primary btn-sm shadow-sm">{{ __('Go Back') }}</a>
+                    <h1 class="h3 mb-0 text-gray-800"><i class="fa-solid fa-pen-to-square" style="color:red;"></i> <span style="color: #209CEE">{{ __('Modifier rôle')}}</span></h1>
+                    <a href="{{ route('admin.permissions.index') }}" class="btn btn-primary btn-sm shadow-sm">{{ __('Retourner') }}</a>
                 </div>
             </div>
             <div class="card-body">
@@ -32,14 +32,14 @@
                         <input type="text" class="form-control" id="title" placeholder="Title" name="title" value="{{ old('title', $role->title) }}" />
                     </div>
                     <div class="form-group">
-                        <label for="permissions">{{ __('Permission') }}</label>
+                        <label for="permissions">{{ __('Autorisation') }}</label>
                         <select name="permissions[]" id="permissions" class="form-control select2" multiple="multiple" required>
                             @foreach($permissions as $id => $permissions)
                                 <option value="{{ $id }}" {{ (in_array($id, old('permissions', [])) || isset($role) && $role->permissions->contains($id)) ? 'selected' : '' }}>{{ $permissions }}</option>
                             @endforeach
                         </select>
                     </div>
-                    <button type="submit" class="btn btn-primary btn-block">{{ __('Save')}}</button>
+                    <button type="submit" class="btn btn-primary btn-block">{{ __('Enregistrer')}}</button>
                 </form>
             </div>
         </div>

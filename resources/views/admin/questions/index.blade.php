@@ -10,14 +10,14 @@
         <div class="card">
             <div class="card-header py-3 d-flex">
                 <h6 class="m-0 font-weight-bold text-primary">
-                    {{ __('question') }}
+                    {{ __('Question') }}
                 </h6>
                 <div class="ml-auto">
                     <a href="{{ route('admin.questions.create') }}" class="btn btn-primary">
                         <span class="icon text-white-50">
                             <i class="fa fa-plus"></i>
                         </span>
-                        <span class="text">{{ __('New question') }}</span>
+                        <span class="text">{{ __('Nouvelle question') }}</span>
                     </a>
                 </div>
             </div>
@@ -29,9 +29,9 @@
                                 <th width="10">
 
                                 </th>
-                                <th>No</th>
-                                <th>Category</th>
-                                <th>Question Text</th>
+                                <th>Numéro</th>
+                                <th>Catégorie</th>
+                                <th>Question</th>
                                 <th>Action</th>
                             </tr>
                         </thead>

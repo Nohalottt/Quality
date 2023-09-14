@@ -7,7 +7,7 @@
         <div class="card">
         <div class="card-header py-3 d-flex">
                 <h6 class="m-0 font-weight-bold text-primary">
-                {{ __('Roles') }}
+                {{ __('Rôles') }}
                 </h6>
                 <div class="ml-auto">
                     @can('role_create')
@@ -15,7 +15,7 @@
                         <span class="icon text-white-50">
                             <i class="fa fa-plus"></i>
                         </span>
-                        <span class="text">{{ __('New role') }}</span>
+                        <span class="text">{{ __('Nouveau rôle') }}</span>
                     </a>
                     @endcan
                 </div>
@@ -28,9 +28,9 @@
                                  <th width="10">
 
                                 </th>
-                                <th>No</th>
-                                <th>Title</th>
-                                <th>Permission</th>
+                                <th>Numéro</th>
+                                <th>Titre</th>
+                                <th>Autorisation</th>
                                 <th>Action</th>
                             </tr>
                         </thead>

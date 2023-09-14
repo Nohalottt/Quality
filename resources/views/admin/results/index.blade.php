@@ -10,14 +10,14 @@
         <div class="card">
             <div class="card-header py-3 d-flex">
                 <h6 class="m-0 font-weight-bold text-primary">
-                    {{ __('result') }}
+                    {{ __('Résultat') }}
                 </h6>
                 <div class="ml-auto">
                     <a href="{{ route('admin.results.create') }}" class="btn btn-primary">
                         <span class="icon text-white-50">
                             <i class="fa fa-plus"></i>
                         </span>
-                        <span class="text">{{ __('New result') }}</span>
+                        <span class="text">{{ __('Nouveau résultat') }}</span>
                     </a>
                 </div>
             </div>
@@ -29,7 +29,7 @@
                                 <th width="10">
 
                                 </th>
-                                <th>No</th>
+                                <th>Numéro</th>
                                 <th>User</th>
                                 <th>Points</th>
                                 <th>Questions</th>

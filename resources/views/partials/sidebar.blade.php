@@ -1,8 +1,9 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" >
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ url('/') }}">
-                <div class="sidebar-brand-text mx-3">{{ __('Homepage') }}</div>
+                <div class="sidebar-brand-text mx-3"><i class="fa-solid fa-graduation-cap" style="color: #ee203f;"></i>{{ __('OnlineQuiz') }}</div>
             </a>
 
             <!-- Divider -->
@@ -24,8 +25,8 @@
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        <a class="collapse-item {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}" href="{{ route('admin.permissions.index') }}"> <i class="fa fa-briefcase mr-2"></i> {{ __('Permissions') }}</a>
-                        <a class="collapse-item {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}" href="{{ route('admin.roles.index') }}"><i class="fa fa-briefcase mr-2"></i> {{ __('Roles') }}</a>
+                        {{-- <a class="collapse-item {{ request()->is('admin/permissions') || request()->is('admin/permissions/*') ? 'active' : '' }}" href="{{ route('admin.permissions.index') }}"> <i class="fa fa-briefcase mr-2"></i> {{ __('Autorisations') }}</a> --}}
+                        <a class="collapse-item {{ request()->is('admin/roles') || request()->is('admin/roles/*') ? 'active' : '' }}" href="{{ route('admin.roles.index') }}"><i class="fa fa-briefcase mr-2"></i> {{ __('Rôles') }}</a>
                         <a class="collapse-item {{ request()->is('admin/users') || request()->is('admin/users/*') ? 'active' : '' }}" href="{{ route('admin.users.index') }}"> <i class="fa fa-user mr-2"></i> {{ __('Users') }}</a>
                     </div>
                 </div>
@@ -34,7 +35,7 @@
             <li class="nav-item {{ request()->is('admin/categories') || request()->is('admin/categories') ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('admin.categories.index') }}">
                     <i class="fas fa-cogs"></i>
-                    <span>{{ __('Category') }}</span></a>
+                    <span>{{ __('Catégorie') }}</span></a>
             </li>
 
             <li class="nav-item {{ request()->is('admin/questions') || request()->is('admin/questions') ? 'active' : '' }}">
@@ -52,7 +53,7 @@
             <li class="nav-item {{ request()->is('admin/results') || request()->is('admin/results') ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('admin.results.index') }}">
                     <i class="fas fa-cogs"></i>
-                    <span>{{ __('Result') }}</span></a>
+                    <span>{{ __('Résultat') }}</span></a>
             </li>
 
 

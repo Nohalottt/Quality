@@ -15,7 +15,7 @@
                         <span class="icon text-white-50">
                             <i class="fa fa-plus"></i>
                         </span>
-                        <span class="text">{{ __('New user') }}</span>
+                        <span class="text">{{ __('Nouvel utilisateur') }}</span>
                     </a>
                     @endcan
                 </div>
@@ -29,9 +29,9 @@
 
                                 </th>
                                 <th>No</th>
-                                <th>{{ __('Name') }}</th>
-                                <th>{{ __('Email') }}</th>
-                                <th>{{ __('Roles') }}</th>
+                                <th>{{ __('Nom') }}</th>
+                                <th>{{ __('E-mail') }}</th>
+                                <th>{{ __('Rôles') }}</th>
                                 <th>{{ __('Action') }}</th>
                             </tr>
                         </thead>
