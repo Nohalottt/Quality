@@ -1,4 +1,4 @@
-# Laravel 8 - Quiz Application
+#Formation sur qualite 4.0 avec Laravel 10
 
 ## Screenshots
 
